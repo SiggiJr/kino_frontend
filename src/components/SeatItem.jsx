@@ -4,7 +4,7 @@ const reserved = seatData.reserved ? " reserved" : ""
 
 const reservate = () => {
 
-  fetch("http://localhost:6969/api/saalplan", {
+  fetch(import.meta.env.VITE_SERVER, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json"
